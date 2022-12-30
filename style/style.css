@@ -456,12 +456,6 @@ h2 span {
   .header__text {
     font-size: 13px;
   }
-  .header__link {
-    padding: 0px 10px 0px 10px;
-  }
-  .header__link::before {
-    background: none;
-  }
   .top {
     padding: 100px 0;
   }
