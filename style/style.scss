@@ -45,7 +45,8 @@ padding: 20px 0;
                 &::before{
                     position: absolute;
                     content: "";
-                    background: url(../images/inst.svg);
+                    background: url(../images/inst.png) no-repeat;
+                    background-size: contain;
                     width: 16px;
                     height: 16px;
                     left: 10px;
@@ -83,13 +84,25 @@ padding: 150px 0;
 		}
 
 		&__btn {
-            padding: 3px 20px;
+            padding: 3px 50px 3px 20px;
             border: none;
             background-color: $main;
             color: #fff;
             font-weight: 500;
             border-radius: 20px;
             font-size: 21px;
+            position: relative;
+            &::before{
+                position: absolute;
+                content: "";
+                background: url(../images/arrow-btn.png) no-repeat;
+                background-size: contain;
+                width: 35px;
+                height: 18px;
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+            }
 		}
 
 		&__img {
@@ -575,11 +588,6 @@ background-color: $main;
         &__text{
             font-size: 13px;
         }
-        &__link{
-            padding: 0px 10px 0px 10px;
-            &::before{
-                background: none;
-            }
         }
     }
     .top{   

@@ -48,7 +48,8 @@ h2 span {
 .header__link::before {
   position: absolute;
   content: "";
-  background: url(../images/inst.svg);
+  background: url(../images/inst.png) no-repeat;
+  background-size: contain;
   width: 16px;
   height: 16px;
   left: 10px;
@@ -81,13 +82,25 @@ h2 span {
   font-size: 18px;
 }
 .top__btn {
-  padding: 3px 20px;
+  padding: 3px 50px 3px 20px;
   border: none;
   background-color: #f05050;
   color: #fff;
   font-weight: 500;
   border-radius: 20px;
   font-size: 21px;
+  position: relative;
+}
+.top__btn::before {
+  position: absolute;
+  content: "";
+  background: url(../images/arrow-btn.png) no-repeat;
+  background-size: contain;
+  width: 35px;
+  height: 18px;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .top__img {
   width: 400px;
