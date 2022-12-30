@@ -235,39 +235,35 @@ padding: 100px 0;
             &::after{
                 position: absolute;
                 content: "";
+                background: url(../images/arrow.png)  no-repeat;
+                background-size: contain;
                 width: 25px;
-                height: 5px;
-                background-color: $main;
+                height: 25px;
                 right: 4px;
                 top: 50%;
                 transform: translateY(-50%);
-                border-radius: 10px;
-                transform: rotate(-45deg);
                 transition: all .5s;
             }
-            &::before{
-                position: absolute;
-                content: "";
-                width: 25px;
-                height: 5px;
-                background-color: $main;
-                right: -10px;
-                top: 50%;
-                transform: translateY(-50%);
-                border-radius: 10px;
-                transform: rotate(45deg);
-                transition: all .5s;
-            }
+            // &::before{
+            //     position: absolute;
+            //     content: "";
+            //     width: 25px;
+            //     height: 5px;
+            //     background-color: $main;
+            //     right: -10px;
+            //     top: 50%;
+            //     transform: translateY(-50%);
+            //     border-radius: 10px;
+            //     transform: rotate(45deg);
+            //     transition: all .5s;
+            // }
         }
         &__item-box--active{
             &::after{
-                transform: rotate(45deg);
+                transform: rotate(-180deg) translateY(50%);
 
             }
-            &::before{
-                transform: rotate(-45deg);
-
-            }
+            
         }
         &__item-content{
                 // max-height: 0;
@@ -538,15 +534,15 @@ background-color: $main;
             font-size: 18px;
         }
         &__item-box{
-            &::after{
-                width: 15px;
-                height: 3px;
-                right: 0px;
-            }
-            &::before{
-                width: 15px;
-                height: 3px;
-            }
+            // &::after{
+            //     width: 15px;
+            //     height: 3px;
+            //     right: 0px;
+            // }
+            // &::before{
+            //     width: 15px;
+            //     height: 3px;
+            // }
         }
     }
     .education{
@@ -731,12 +727,12 @@ background-color: $main;
             }
         }
         &__item-box{
-            &::after{
-                right: -15px;
-            }
-            &::before{
-                right: -25px;
-            }
+            // &::after{
+            //     right: -15px;
+            // }
+            // &::before{
+            //     right: -25px;
+            // }
         }
         &__item-content{
             padding-right: 15px;

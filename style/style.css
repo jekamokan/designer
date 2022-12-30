@@ -175,34 +175,17 @@ h2 span {
 .program__item-box::after {
   position: absolute;
   content: "";
+  background: url(../images/arrow.png) no-repeat;
+  background-size: contain;
   width: 25px;
-  height: 5px;
-  background-color: #f05050;
+  height: 25px;
   right: 4px;
   top: 50%;
   transform: translateY(-50%);
-  border-radius: 10px;
-  transform: rotate(-45deg);
-  transition: all 0.5s;
-}
-.program__item-box::before {
-  position: absolute;
-  content: "";
-  width: 25px;
-  height: 5px;
-  background-color: #f05050;
-  right: -10px;
-  top: 50%;
-  transform: translateY(-50%);
-  border-radius: 10px;
-  transform: rotate(45deg);
   transition: all 0.5s;
 }
 .program__item-box--active::after {
-  transform: rotate(45deg);
-}
-.program__item-box--active::before {
-  transform: rotate(-45deg);
+  transform: rotate(-180deg) translateY(50%);
 }
 .program__item-content {
   display: none;
@@ -435,15 +418,6 @@ h2 span {
     font-weight: 400;
     font-size: 18px;
   }
-  .program__item-box::after {
-    width: 15px;
-    height: 3px;
-    right: 0px;
-  }
-  .program__item-box::before {
-    width: 15px;
-    height: 3px;
-  }
   .education__list {
     gap: 20px;
   }
@@ -591,12 +565,6 @@ h2 span {
   }
   .program__item::after {
     right: 10px;
-  }
-  .program__item-box::after {
-    right: -15px;
-  }
-  .program__item-box::before {
-    right: -25px;
   }
   .program__item-content {
     padding-right: 15px;
