@@ -241,7 +241,7 @@ padding: 100px 0;
                 height: 25px;
                 right: 4px;
                 top: 50%;
-                transform: translateY(-50%);
+                transform: translateY(-25%);
                 transition: all .5s;
             }
             // &::before{
@@ -260,7 +260,7 @@ padding: 100px 0;
         }
         &__item-box--active{
             &::after{
-                transform: rotate(-180deg) translateY(50%);
+                transform: rotate(-180deg) translateY(75%);
 
             }
             
@@ -638,6 +638,10 @@ background-color: $main;
         &__item-content p{
             font-size: 13px;
         }
+        &__item-box:after{
+            width: 20px;
+            height: 20px;
+        }
     }
     .education{
         &__list{
@@ -721,18 +725,14 @@ background-color: $main;
     }
     .program{
         &__item{
-            padding-right: 35px;
-            &::after{
-                right: 10px;
-            }
+            padding-right: 40px;
+            
         }
         &__item-box{
-            // &::after{
-            //     right: -15px;
-            // }
-            // &::before{
-            //     right: -25px;
-            // }
+            &::after{
+                right: -20px;
+            }
+            
         }
         &__item-content{
             padding-right: 15px;

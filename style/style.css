@@ -181,11 +181,11 @@ h2 span {
   height: 25px;
   right: 4px;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-25%);
   transition: all 0.5s;
 }
 .program__item-box--active::after {
-  transform: rotate(-180deg) translateY(50%);
+  transform: rotate(-180deg) translateY(75%);
 }
 .program__item-content {
   display: none;
@@ -501,6 +501,10 @@ h2 span {
   .program__item-content p {
     font-size: 13px;
   }
+  .program__item-box:after {
+    width: 20px;
+    height: 20px;
+  }
   .education__list {
     flex-direction: column;
     align-items: center;
@@ -561,10 +565,10 @@ h2 span {
     margin-bottom: 100px;
   }
   .program__item {
-    padding-right: 35px;
+    padding-right: 40px;
   }
-  .program__item::after {
-    right: 10px;
+  .program__item-box::after {
+    right: -20px;
   }
   .program__item-content {
     padding-right: 15px;
